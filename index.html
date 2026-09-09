@@ -18,90 +18,28 @@
 <div id="app">
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Prompt Era home"><span class="brand-mark">P</span><span>PROMPT <b>ERA</b></span></a>
-    <nav class="desktop-nav">
-      <a href="#home">Home</a><a href="#images">AI Images</a><a href="#categories">Categories</a><a href="#trending">Trending</a><a href="#about">About</a>
-    </nav>
+    <nav class="desktop-nav"><a href="#home">Home</a><a href="#images">AI Images</a><a href="#categories">Categories</a><a href="#trending">Trending</a><a href="#about">About</a><a href="/admin.html">Admin</a></nav>
     <div class="header-actions">
       <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
       <button class="icon-btn menu-btn" id="menuToggle" aria-label="Menu">☰</button>
     </div>
   </header>
 
-  <div id="mobileNav" class="mobile-nav">
-    <a href="#home">Home</a><a href="#images">AI Images</a><a href="#categories">Categories</a><a href="#trending">Trending</a><a href="#about">About</a>
-  </div>
+  <div id="mobileNav" class="mobile-nav"><a href="#home">Home</a><a href="#images">AI Images</a><a href="#categories">Categories</a><a href="#trending">Trending</a><a href="#about">About</a><a href="/admin.html">Admin</a></div>
 
-  <div id="searchPanel" class="search-panel">
-    <div class="search-wrap"><span>⌕</span><input id="searchInput" placeholder="Search cinematic, portrait, cyberpunk..." autocomplete="off"></div>
-  </div>
+  <div id="searchPanel" class="search-panel"><div class="search-wrap"><span>⌕</span><input id="searchInput" placeholder="Search cinematic, portrait, cyberpunk..." autocomplete="off"></div></div>
 
   <main>
-    <section id="home" class="hero">
-      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
-      <div class="hero-grid"></div>
-      <div class="hero-content">
-        <div class="eyebrow"><span class="pulse"></span> AI PROMPT DISCOVERY PLATFORM</div>
-        <h1>Unlock the prompts behind <span>amazing AI images.</span></h1>
-        <p>Explore stunning AI-generated artwork and discover the prompts you can use to create your own images.</p>
-        <div class="hero-buttons"><a class="btn primary" href="#images">Explore AI Images <span>→</span></a><a class="btn ghost" href="#latest">Latest Prompts</a></div>
-        <div class="hero-stats"><div><strong>12+</strong><span>Demo prompts</span></div><div><strong>15</strong><span>Categories</span></div><div><strong>100%</strong><span>Mobile ready</span></div></div>
-      </div>
-    </section>
-
-    <section id="images" class="section">
-      <div class="section-head"><div><span class="kicker">EXPLORE</span><h2>AI Image Gallery</h2><p>Find inspiration, then unlock the exact prompt.</p></div><div id="activeFilter" class="filter-pill">All images</div></div>
-      <div id="gallery" class="gallery"></div>
-      <div id="emptyState" class="empty hidden"><div>✦</div><h3>No prompts found</h3><p>Try another keyword or category.</p></div>
-    </section>
-
-    <section id="categories" class="section categories-section">
-      <div class="section-head"><div><span class="kicker">BROWSE</span><h2>Explore Categories</h2><p>Jump directly into a visual style.</p></div></div>
-      <div id="categoriesGrid" class="categories-grid"></div>
-    </section>
-
-    <section id="trending" class="section alt">
-      <div class="section-head"><div><span class="kicker">POPULAR NOW</span><h2>Trending AI Prompts</h2><p>Popular demo creations from the Prompt Era collection.</p></div></div>
-      <div id="trendingGrid" class="mini-grid"></div>
-    </section>
-
-    <section id="latest" class="section">
-      <div class="section-head"><div><span class="kicker">FRESH DROPS</span><h2>Latest Prompts</h2><p>New creative directions to experiment with.</p></div></div>
-      <div id="latestGrid" class="mini-grid"></div>
-    </section>
-
-    <section id="about" class="about section">
-      <div class="about-card"><span class="kicker">ABOUT PROMPT ERA</span><h2>Turn inspiration into creation.</h2><p>Prompt Era is a creative discovery platform for exploring AI-generated images and learning the prompt ideas behind them. Use the collection as a starting point for your own experiments.</p><a href="#images" class="btn primary">Start Exploring →</a></div>
-      <div class="about-points"><div><b>01</b><h3>Discover</h3><p>Browse cinematic, fashion, fantasy, photography and more.</p></div><div><b>02</b><h3>Unlock</h3><p>Complete the transparent prototype unlock flow to reveal a prompt.</p></div><div><b>03</b><h3>Create</h3><p>Copy the prompt and adapt it for your preferred AI image tool.</p></div></div>
-    </section>
+    <section id="home" class="hero"><div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div><div class="hero-grid"></div><div class="hero-content"><div class="eyebrow"><span class="pulse"></span> AI PROMPT DISCOVERY PLATFORM</div><h1>Unlock the prompts behind <span>amazing AI images.</span></h1><p>Explore stunning AI-generated artwork and discover the prompts you can use to create your own images.</p><div class="hero-buttons"><a class="btn primary" href="#images">Explore AI Images <span>→</span></a><a class="btn ghost" href="#latest">Latest Prompts</a></div><div class="hero-stats"><div><strong>12+</strong><span>Demo prompts</span></div><div><strong>15</strong><span>Categories</span></div><div><strong>100%</strong><span>Mobile ready</span></div></div></div></section>
+    <section id="images" class="section"><div class="section-head"><div><span class="kicker">EXPLORE</span><h2>AI Image Gallery</h2><p>Find inspiration, then unlock the exact prompt.</p></div><div id="activeFilter" class="filter-pill">All images</div></div><div id="gallery" class="gallery"></div><div id="emptyState" class="empty hidden"><div>✦</div><h3>No prompts found</h3><p>Try another keyword or category.</p></div></section>
+    <section id="categories" class="section categories-section"><div class="section-head"><div><span class="kicker">BROWSE</span><h2>Explore Categories</h2><p>Jump directly into a visual style.</p></div></div><div id="categoriesGrid" class="categories-grid"></div></section>
+    <section id="trending" class="section alt"><div class="section-head"><div><span class="kicker">POPULAR NOW</span><h2>Trending AI Prompts</h2><p>Popular demo creations from the Prompt Era collection.</p></div></div><div id="trendingGrid" class="mini-grid"></div></section>
+    <section id="latest" class="section"><div class="section-head"><div><span class="kicker">FRESH DROPS</span><h2>Latest Prompts</h2><p>New creative directions to experiment with.</p></div></div><div id="latestGrid" class="mini-grid"></div></section>
+    <section id="about" class="about section"><div class="about-card"><span class="kicker">ABOUT PROMPT ERA</span><h2>Turn inspiration into creation.</h2><p>Prompt Era is a creative discovery platform for exploring AI-generated images and learning the prompt ideas behind them. Use the collection as a starting point for your own experiments.</p><a href="#images" class="btn primary">Start Exploring →</a></div><div class="about-points"><div><b>01</b><h3>Discover</h3><p>Browse cinematic, fashion, fantasy, photography and more.</p></div><div><b>02</b><h3>Unlock</h3><p>Complete the transparent prototype unlock flow to reveal a prompt.</p></div><div><b>03</b><h3>Create</h3><p>Copy the prompt and adapt it for your preferred AI image tool.</p></div></div></section>
   </main>
-
-  <footer>
-    <div class="footer-main"><div><a class="brand" href="#home"><span class="brand-mark">P</span><span>PROMPT <b>ERA</b></span></a><p>Discover. Unlock. Create.</p></div><div class="footer-links"><a href="#home">Home</a><a href="#images">AI Images</a><a href="#categories">Categories</a><a href="#trending">Trending</a><a href="#about">About</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#disclaimer">Disclaimer</a></div></div>
-    <div class="footer-bottom"><span>© 2026 Prompt Era. All rights reserved.</span><span>AI inspiration for creators.</span></div>
-  </footer>
+  <footer><div class="footer-main"><div><a class="brand" href="#home"><span class="brand-mark">P</span><span>PROMPT <b>ERA</b></span></a><p>Discover. Unlock. Create.</p></div><div class="footer-links"><a href="#home">Home</a><a href="#images">AI Images</a><a href="#categories">Categories</a><a href="#trending">Trending</a><a href="#about">About</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#disclaimer">Disclaimer</a><a href="/admin.html">Admin</a></div></div><div class="footer-bottom"><span>© 2026 Prompt Era. All rights reserved.</span><span>AI inspiration for creators.</span></div></footer>
 </div>
-
-<div id="modal" class="modal hidden" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
-  <article class="post-modal">
-    <button class="modal-close" data-close aria-label="Close">×</button>
-    <div id="postImage" class="post-image"></div>
-    <div class="post-body">
-      <div class="post-meta"><span id="postCategory"></span><span id="postRatio"></span><span id="postStyle"></span><span id="postDifficulty"></span></div>
-      <h2 id="postTitle"></h2><p id="postDescription"></p>
-      <div id="unlockBox" class="unlock-box">
-        <div class="lock-icon">🔒</div><div><span class="unlock-label">PROMPT LOCKED</span><p>Unlock this prompt to reveal the exact AI generation instructions.</p></div>
-        <button id="unlockBtn" class="btn primary">Unlock Prompt</button>
-      </div>
-      <div id="timerBox" class="timer-box hidden"><div class="timer-ring"><span id="timerValue">10</span></div><div><strong>Prompt unlock in progress...</strong><p id="timerText">Please wait 10 more seconds.</p></div></div>
-      <div id="promptBox" class="prompt-box hidden"><div class="unlocked-head"><span>✓ PROMPT UNLOCKED</span><button id="copyBtn" class="copy-btn">Copy Prompt</button></div><pre id="promptText"></pre></div>
-      <div class="share-row"><span>Share</span><button data-share="facebook">Facebook</button><button data-share="x">X</button><button data-share="whatsapp">WhatsApp</button><button data-share="telegram">Telegram</button><button id="copyLink">Copy Link</button></div>
-    </div>
-  </article>
-</div>
+<div id="modal" class="modal hidden" aria-hidden="true"><div class="modal-backdrop" data-close></div><article class="post-modal"><button class="modal-close" data-close aria-label="Close">×</button><div id="postImage" class="post-image"></div><div class="post-body"><div class="post-meta"><span id="postCategory"></span><span id="postRatio"></span><span id="postStyle"></span><span id="postDifficulty"></span></div><h2 id="postTitle"></h2><p id="postDescription"></p><div id="unlockBox" class="unlock-box"><div class="lock-icon">🔒</div><div><span class="unlock-label">PROMPT LOCKED</span><p>Unlock this prompt to reveal the exact AI generation instructions.</p></div><button id="unlockBtn" class="btn primary">Unlock Prompt</button></div><div id="timerBox" class="timer-box hidden"><div class="timer-ring"><span id="timerValue">10</span></div><div><strong>Prompt unlock in progress...</strong><p id="timerText">Please wait 10 more seconds.</p></div></div><div id="promptBox" class="prompt-box hidden"><div class="unlocked-head"><span>✓ PROMPT UNLOCKED</span><button id="copyBtn" class="copy-btn">Copy Prompt</button></div><pre id="promptText"></pre></div><div class="share-row"><span>Share</span><button data-share="facebook">Facebook</button><button data-share="x">X</button><button data-share="whatsapp">WhatsApp</button><button data-share="telegram">Telegram</button><button id="copyLink">Copy Link</button></div></div></article></div>
 <div id="toast" class="toast"></div>
-
-<script src="app.js"></script>
-<script src="https://tallytrivial.com/21/fa/d9/21fad91522874756415f5bad7131c60d.js"></script>
-</body>
-</html>
+<script src="app.js"></script><script src="https://tallytrivial.com/21/fa/d9/21fad91522874756415f5bad7131c60d.js"></script>
+</body></html>
