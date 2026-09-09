@@ -46,6 +46,11 @@ export default async (req: Request) => {
     return new Response(blob, { headers: { "content-type": String(meta.metadata?.contentType || "image/jpeg"), "cache-control": "public, max-age=31536000, immutable" } });
   }
 
+  // Admin listing must reject invalid/missing credentials.
+  if (req.method === "GET" && url.searchParams.get("admin") === "1" && !authorized(req)) {
+    return json({ error: "Unauthorized" }, 401);
+  }
+
   const posts = await readPosts();
 
   if (req.method === "GET" && url.searchParams.has("prompt")) {
